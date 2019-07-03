@@ -1,0 +1,23 @@
+CREATE TABLE IF NOT EXISTS poet(
+poet_id INT,
+poet_name VARCHAR(30),
+INSERT INTO poet(poet_id, poet_name)
+VALUES('0101', ‘Poet Name’);
+
+CREATE TABLE IF NOT EXISTS poem(
+poem_id INT,
+poem_title VARCHAR(50)
+INSERT INTO poem(poet_id, poem_title)
+VALUES('0001', ‘Forrest Gump');
+
+CREATE TABLE IF NOT EXISTS judges(
+judge_id INT,
+judge_name VARCHAR(30), INSERT INTO judges(judge_id, judge_name)
+VALUES('10101', 'First Judge');
+
+CREATE TABLE IF NOT EXISTS combinations(
+judge_id INT,3
+poem_id INT,
+score DECIMAL,
+INSERT INTO poem(judge_id, poem_id, score)
+VALUES('1001', '11101', '25.5');
