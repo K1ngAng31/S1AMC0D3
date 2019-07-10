@@ -1,0 +1,37 @@
+/* Add any css you want to use for you website here */
+body {
+	background-color: white;
+	font-family: helvetica;
+}
+
+h1 {
+	font-weight: bold;
+	color: black;
+}
+
+h2 {
+	font-weight: bold;
+	color: black;
+}
+
+h3 {
+	font-weight: bold;
+	color: black;
+}
+
+.boxed {
+	border: 5px solid #ECB119;
+	padding: 50px;
+	width: 300px;
+	margin: 30px;
+}
+
+
+.navbar {
+	background-color: #ECB119;
+
+}
+
+.img-rounded {
+	border-radius: 50px;
+}
