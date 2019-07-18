@@ -8,7 +8,7 @@
     <title>Poet Information</title>
 	<link rel='icon' href='../resources/img/favicon.ico' type='image/x-icon'/>
     <!-- Bootstrap core CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">  
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<link href="../resources/css/my_style.css" rel="stylesheet">
   </head>
   <body>
@@ -29,7 +29,7 @@
 		  </li>
       <li class="nav-item">
       <a class="nav-link" href="host.html">Host</a>
-      </li>     
+      </li>
       <li class="nav-item">
       <a class="nav-link" href="judge.html">Judge</a>
       </li>
@@ -50,7 +50,7 @@
 				  <div class="card">
     					<img class="card-img-top" src="../resources/img/default_avatar.png" alt="Card image cap">
     					<div class="card-body">
-      						<h5 class="card-title"> John Doe </h5>
+      						<h5 class="card-title"> <span id="poetName_1"> </h5>
       						<ul class="card-text list" >
       							<li> Poem Title: -- </li>
       							<li> Birthdate: -- </li>
@@ -124,9 +124,38 @@
    						 	</div>
   						</div>
 		</div>
-		
+
 	</div>
-  
+
+  <script>
+        $(document).ready(function(){
+          /*var pg = require('pg'); //include postgres dependancy
+          var connectionString = "postgres://user:csci3308@PostgreSQL11/ip:5432/football_db"; //connection string in format: "postgres://userName:password@serverName/ip:port/nameOfDatabase"
+          var pgThing = new pg.Thing(connectionString); //instantiate the thing for postgres database
+          pgThing.connect(); //connect to database
+          var query = pgThing.query("SELECT visitor_name from football_games");  //execute query */
+
+      /*    const dbConfig = {
+          	host: 'localhost',
+          	port: 5432,
+          	database: 'football_db',
+          	user: 'postgres',
+          	password: 'csci3308'
+          };
+
+          var db = pgp(dbConfig);
+
+          // set the view engine to ejs
+          app.set('view engine', 'js');
+          app.use(express.static(__dirname + '/'));//This line is necessary for us to use relative paths and access our resources directory
+
+          var query = "select visitor_name from football_games"; */
+
+          document.getElementById("poetName_1").innerHTML = "herro";
+
+        })
+  </script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>

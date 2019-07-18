@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS poetInfo;
+CREATE TABLE poetInfo
+	(
+		poetName	varchar(100)	default NULL,
+		poem1		varchar(100)	default NULL,
+		poem2		varchar(100)	default NULL,
+		poem3		varchar(100)	default NULL,
+		birthday	datetime	default NULL,
+		wins		int		default '0'
+	)
+	CHARACTER SET utf8 COLLATE utf8 general ci;
