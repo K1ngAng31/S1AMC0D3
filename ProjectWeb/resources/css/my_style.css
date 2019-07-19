@@ -1,26 +1,49 @@
 /* Add any css you want to use for you website here */
 body {
-	background-color: white;
+	/* background-color: white; */
+	/* text-shadow: 2px 2px 5px orange; */
 	font-family: helvetica;
+}
+.parallax {
+  /* The image used */
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiNqKQoPWPtEYr3Ro3YeZQZE7TZC3tb6AMshAekJL-XRoHk_KoyQ");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
+	text-shadow: 2px 2px 5px orange;
 	font-weight: bold;
 	color: black;
 }
 
 h2 {
+	text-shadow: 2px 2px 5px black;
 	font-weight: bold;
 	color: black;
 }
 
 h3 {
+	text-shadow: 2px 2px 5px lightblue;
 	font-weight: bold;
 	color: black;
 }
+h4{
+	text-shadow: 2px 2px 5px orange;
+	font-weight: bold;
+	color: black;
+
+}
 
 .boxed {
-	border: 5px solid #ECB119;
+	border: 5px solid /*#B0C4DE;*/ #ECB119;
 	padding: 50px;
 	width: 300px;
 	margin: 30px;
@@ -28,10 +51,63 @@ h3 {
 
 
 .navbar {
-	background-color: #ECB119;
+	background-color: /*#B0C4DE;*/#ECB119;
 
 }
 
 .img-rounded {
 	border-radius: 50px;
 }
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+    border-radius: 5px;
+    opacity: 0.95;
+    background-color: #f2f2f2;
+    padding: 10px;
+    align: center;
+}
+
+/* Create two columns that float next to eachother */
+/* .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+} */
+
+/* Clear floats after the columns */
+/* .row:after {
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+/* @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+} */
