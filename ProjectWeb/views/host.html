@@ -1,4 +1,4 @@
-<!-- Host Page -->
+﻿<!-- Host Page -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -22,19 +22,19 @@
 	  <div class="collapse navbar-collapse " id="navbarText">
 		<ul class="navbar-nav mr-auto">
 		  <li class="nav-item ">
-			<a class="nav-link" href="home.html">HOME</a>
+			<a class="nav-link" href="home.html">Home</a>
 		  </li>
 		  <li class="nav-item">
-			<a class="nav-link" href="stats.html">STATS<span class="sr-only">(current)</span></a>
+			<a class="nav-link" href="stats.html">Stats <span class="sr-only">(current)</span></a>
 		  </li>
      	 <li class="nav-item active">
-      		<a class="nav-link" href="host.html">HOST</a>
-      	</li>
+      		<a class="nav-link" href="host.html">Host</a>
+      	</li> 
 		  <li class="nav-item ">
-			<a class="nav-link" href="judge.html">JUDGE</a>
+			<a class="nav-link" href="judge.html">Judge</a>
 		  </li>
 		  <li class="nav-item">
-			<a class="nav-link" href="http://localhost:4000/poetinfo">POET INFO</a>
+			<a class="nav-link" href="poetinfo.html">Poet Information</a>
 		  </li>
 		</ul>
 		<div class="form-inline my-2 my-lg-0 ">
@@ -42,17 +42,50 @@
 		</div>
 	  </div>
 	</nav>
-	<div class="container" align="middle">
-		<br/>
-		<br/>
-		<h3> Host Code </h3>
-	<h5> 87KL32 </h5>
+    <div class="container" align="center">
+        <br />
+        <br />
+        <h3> Host Code </h3>
 
-	</a>
-		<br/>
+        <script language="javascript" type="text/javascript">
+            function randomString() {
+                var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+                var string_length = 8;
+                var randomstring = '';
+                for (var i = 0; i < string_length; i++) {
+                    var rnum = Math.floor(Math.random() * chars.length);
+                    randomstring += chars.substring(rnum, rnum + 1);
+                }
+                document.randform.randomfield.value = randomstring;
+            }
+        </script>
 
-	</div>
+        <form name="randform">
+            <input type="button" value="Generate" onClick="randomString();">&nbsp;
+            <input type="text" name="randomfield" value="">
+            <input type="submit" value="Submit" />
+        </form>
 
+        <script>
+            function mytable($randomstring)
+        $result = mysqli_query( $this->conn,"INSERT INTO school(f_id) VALUES ('$number')");
+        return $result;
+        }
+        mytable($_POST['randomstring']);
+
+        </script>
+        
+
+
+
+
+
+
+
+        <br />
+
+    </div>
+  
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
