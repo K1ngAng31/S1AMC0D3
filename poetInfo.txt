@@ -1,15 +1,17 @@
-CREATE TABLE IF NOT EXISTS poet_info (
+DROP TABLE IF EXISTS poet_info;
+CREATE TABLE poet_info (
 	poet_name     VARCHAR(100)    default NULL,
 	poem1         varchar(100)    default NULL,
 	poem2         varchar(100)    default NULL,
 	poem3         varchar(100)    default NULL,
-	birthday      DATE            default NULL,
+	birthday      varchar(20)     default NULL,
 	wins	      int	      default '0'
 );
 
-INSERT INTO poet_info (poet_name) 
-VALUES ('Jonathan Anouki'),
-('Dion Gerudo'),
-('Sophie Twili'),
-('Changa Cucco'),
-('Birdie Sheika');
+INSERT INTO poet_info (poet_name, poem1, poem2, poem3, birthday, wins) 
+VALUES ('Jonnom Anouki', 'Dance Music', 'On Love', 'A Dirge', '02/21/1997', 7), 
+('Dionne Gerudo', 'Autopsy of an Artist', '2', '3', '01/02/1996', 3),
+('Sophie Twili', 'Skittles', 'Vertebrae', 'tres', '04/05/2000', 4),
+('Changa Cucco', 'Another poem about my Ex', 'tew', 'tree', '06/07/1999', 5),
+('Birdie Sheika', 'one', 'two', 'three', '08/09/1988', 0),
+('Emily Dickenson', 'A Bird came down the Walk', 'I do not actually', 'read her poems', '12/10/1830', 9999);

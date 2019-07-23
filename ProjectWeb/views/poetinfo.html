@@ -11,6 +11,10 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<link href="../resources/css/my_style.css" rel="stylesheet">
   </head>
+
+  <body class="page_bg">
+  </body>
+
   <body>
 	<nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark ">
 	  <a class="navbar-brand" href="home.html">
@@ -126,13 +130,36 @@
 		</div>
 
 	</div>
+<!--
+  <?php
+  try {$dbuser = 'postgres';
+  $dbpass = 'csci3308';
+  $host = 'localhost';
+  $dbname='project_db';
+  $connec = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
+  }catch (PDOException $e) {
+  echo "Error : " . $e->getMessage() . "<br/>";
+  die();
+  }
+  $sql = 'SELECT poet_name FROM poet_info';
+  foreach ($connec->query($sql) as $row)
+  {
+  print $row['poet_name'] . "<br>";
+  }
+  ?>
+-->
 
   <script>
+        //  $db_connection = pg_connect("host=localhost dbname=project_db user=postgres password=csci3308");
+
+          var express = require('express');
+          var flash
+
           var pg = require('pg'); //include postgres dependancy
           var connectionString = "postgres://postgres:csci3308@localhost:5432/project_db"; //connection string in format: "postgres://userName:password@serverName/ip:port/nameOfDatabase"
           var pgThing = new pg.Thing(connectionString); //instantiate the thing for postgres database
           pgThing.connect(); //connect to database
-          var query = pgThing.query("SELECT visitor_name from football_games");  //execute query
+          var query = pgThing.query("SELECT poet_name from poet_info");  //execute query
 
           //Create Database Connection
           /*var pgp = req('pg-promise')();
@@ -153,7 +180,8 @@
 
           var query = "select poet_name from poet_info;";*/
 
-          document.getElementById("poetName_1").innerHTML = "herro";
+
+          document.getElementById("poetName_1").innerHTML = "fugg";
 
   </script>
 
