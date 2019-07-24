@@ -40,5 +40,14 @@ app.get('/poetinfo', function(req, res) {
   });
 });
 
+app.get('/judge', function (req, res) {var html = fs.readFileSync('./views/judge.html', 'utf8')
+res.send(html) })// , {root:__dirname}) })
+
+app.get('/stats', function (req, res) {res.sendFile('stats.html', {root:__dirname}) })
+
+app.get('/host', function (req, res) {res.sendFile('host.html', {root:__dirname}) })
+
+app.get('/Home', function (req, res) {res.sendFile('Home.html', {root:__dirname}) })
+
 app.listen(4000);
 console.log('4000 is the magic port');
