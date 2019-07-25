@@ -90,6 +90,16 @@ input[type=submit]:hover {
     align: center;
 }
 
+.btn-group button {
+    background-color: #ECB119;
+    padding: 10px 10px;
+    font-size: 50px;
+    border: 5px solid white;
+    color: white;
+    width: 100px;
+    text: center;
+}
+
 /* Create two columns that float next to eachother */
 /* .column {
     float: left;
